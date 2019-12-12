@@ -1,6 +1,6 @@
-# JS TEMPLATE
+# Sports system
 
-This app will let you <WHAT DOES THIS DO>.
+This app will let you manage a database with mongodb that handles a user-bill system.
 
 To install it you have to do the following:
 
@@ -10,6 +10,14 @@ To install it you have to do the following:
 4. Type `npm install`
 5. Type `npm start`
 
-<SOME TEXT ABOUT HOW TO PROCEED>
+Commands and parameters
 
-<DOCUMENTATION>
+    -Match:
+	-contendants: teams of the match
+        -date: string with date
+	-progress: how is the match going (array of int)
+	-state: state of the match (int)
+    -Team:
+	-name: String
+
+For documentation read GraphQL
