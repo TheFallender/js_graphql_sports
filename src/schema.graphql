@@ -1,0 +1,28 @@
+type Query {
+    listTeams: [Team!]!
+}
+
+type Mutation {
+    addTeam(name: String!): Team!
+    addMatch(contendants: [ID!]!, date: String!): Match!
+    updateMatchProgress(id: ID!, progress: [Int!]!) : Match!
+    updateMatchState(id: ID!, state: Int!) : Match!
+}
+
+type Subscription {
+    subscribeTeam(id: ID!): Match!
+    subscribeMatch(id: ID!): Match!
+}
+
+type Team {
+    _id: ID!
+    name: String!
+}
+
+type Match {
+    _id: ID!
+    contendants: [Team!]!
+    date: String!
+    progress: [Int]!
+    state: Int!
+}
