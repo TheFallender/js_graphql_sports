@@ -21,3 +21,6 @@ Commands and parameters
 	-name: String
 
 For documentation read GraphQL
+
+
+# DO NOT BOTHER USING THE USERNAME AND PASSWORD FOR THAT CLUSTER, IT WON'T WORK
